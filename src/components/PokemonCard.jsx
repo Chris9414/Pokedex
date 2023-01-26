@@ -25,6 +25,8 @@ const PokemonCard = ({url}) => {
 
     filterStats()
 
+    console.log(stats)
+
     
 
 
@@ -50,12 +52,22 @@ const PokemonCard = ({url}) => {
                     <div>
                         <div className='data-container'>
                             <ul className='data-stats'>
-                                {stats.map( stat => (
-                                    <li key={stat.id}>
-                                        <p className='stats-label'>{stat.stat.name}</p>
-                                        <span className={`stats-data ${pokemon.types?.[0].type.name}-color`}>{stat.base_stat}</span>
+                                    <li>
+                                        <p className='stats-label'>{stats[0]?.stat.name}</p>
+                                        <span className={`stats-data ${pokemon.types?.[0].type.name}-color`}>{stats[0]?.base_stat}</span>
                                     </li>
-                                 ))}
+                                    <li>
+                                        <p className='stats-label'>{stats[1]?.stat.name}</p>
+                                        <span className={`stats-data ${pokemon.types?.[0].type.name}-color`}>{stats[1]?.base_stat}</span>
+                                    </li>
+                                    <li>
+                                        <p className='stats-label'>{stats[2]?.stat.name}</p>
+                                        <span className={`stats-data ${pokemon.types?.[0].type.name}-color`}>{stats[2]?.base_stat}</span>
+                                    </li>
+                                    <li>
+                                        <p className='stats-label'>{stats[3]?.stat.name}</p>
+                                        <span className={`stats-data ${pokemon.types?.[0].type.name}-color`}>{stats[3]?.base_stat}</span>
+                                    </li>
                             </ul>
                             
                         </div>
