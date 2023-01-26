@@ -17,12 +17,6 @@ const PokemonCard = ({url}) => {
     
     },[])
     
-    
-
-    console.log(stats)
-
-    
-
 
     return (
         <li className={`pokemon_card ${pokemon.types?.[0].type.name}`}>
@@ -36,7 +30,7 @@ const PokemonCard = ({url}) => {
                         <h2 className={`pokemon-name ${pokemon.types?.[0].type.name}-color`}>{pokemon.name}</h2>
                         <ul className='pokemon-type-container'>    
                             {pokemon.types?.map( type => (
-                                <li key={type.id} className='pokemon-type'>
+                                <li key={type.type.url} className='pokemon-type'>
                                     {" "}{type.type.name}
                                 </li>
                             ))}

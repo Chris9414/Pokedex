@@ -19,7 +19,7 @@ const Pagination = ({currentPage,setCurrentPage,totalPages}) => {
     }}
 
     const selectPage = () =>{
-        if(selectedPage<129){
+        if(selectedPage<107){
         setPage(selectedPage)
         setCurrentPage(selectedPage)
     }else{

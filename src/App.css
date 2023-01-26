@@ -180,6 +180,82 @@
   color:#971B45;
 }
 
+.normal-background-color{
+  background-color:#735259;
+}
+
+.figthting-background-color{
+  background-color:#96402A;
+}
+
+.flying-background-color{
+  background-color:#735259;
+}
+
+.poison-background-color{
+  background-color:#5B3184;
+}
+
+.ground-background-color{
+  background-color:#5E736C;
+}
+
+.rock-background-color{
+  background-color:#7E7E7E;
+}
+
+.bug-background-color{
+  background-color:#62DB60;
+}
+
+.ghost-background-color{
+  background-color:#323569;
+}
+
+.steel-background-color{
+  background-color:#5E736C;
+}
+
+.fire-background-color{
+  background-color:#F96D6F;
+}
+
+.water-background-color{
+  background-color:#133258;
+}
+
+.grass-background-color{
+  background-color:#7EC6C5;
+}
+
+.electric-background-color{
+  background-color:#0C1395
+}
+
+.psychic-background-color{
+  background-color:#735259;
+}
+
+.ice-background-color{
+  background-color:#6FBEDF;
+}
+
+.dragon-background-color{
+  background-color:#478A93
+}
+
+.dark-background-color{
+  background-color:#030706;
+}
+
+.fairy-background-color{
+  background-color:#971B45;
+}
+
+:root{
+  --fill-size: 45%; 
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -431,3 +507,204 @@ ul{
   border-radius: 0 1rem 1rem 0;
   border: none;
 }
+
+.pokemon-stats-detail{
+  width: 1116px;
+  height: 1272px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 10rem auto;
+}
+
+.pokemon_card_details{
+  border: none;
+  height: 185px;
+  position: relative;
+}
+
+.pokemon-img-details{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -230px;
+  left: 380px;
+}
+
+.pokemon-details-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.pokemon-details-id{
+  padding: 0.2rem 0.5rem;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #416460;
+  border: 0.5px solid #416460;
+}
+
+.pokemon-details-name-container{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pokemon-details-name{
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 53px;
+  color: #416460;
+}
+
+.line-name{
+  width: 313.5px;
+  height: 0px;
+  border: 1px solid #9F9F9F;
+}
+
+.pokemon-details-label{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0F0F2D;
+  padding: 0 0 0.3rem 0;
+}
+
+.pokemon-details-item{
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: #0F0F2D;
+}
+
+.pokemon-details-item-container{
+  display: flex;
+  gap: 4rem;
+}
+
+.pokemon-details-type{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.pokemon-details-type h2{
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #302F2F;  
+}
+
+.container-type-details{
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.container-ability-details{
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.li-type-details{
+  padding: 0.5rem 2rem;
+  color: white;
+}
+
+.li-ability-details{
+  padding: 0.5rem 2rem;
+  border: 1px solid #D3D3D3
+}
+
+.stats-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem 0 2rem 0;
+}
+
+.stats-title h2{
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 53px;
+  color: #302F2F;
+}
+
+.stats-title div{
+  width: 680px;
+  height: 0px;
+  border: 1px solid #D3D3D3
+}
+
+.stats-title img{
+  width: 89px;
+  height: 89px;
+}
+
+.progress-bar{
+  position: relative;
+  width: 897px;
+  height: 50px;
+  border-radius: 2em;
+  overflow: hidden;
+  padding: 0 7rem;
+  margin: 0 auto;
+}
+
+.progress-bar::before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  transform: translateX(-100%);
+  animation: fill-bar 0.8s 0.3s ease-in-out forwards;
+}
+
+@keyframes fill-bar {
+  to {
+    transform: translateX(var(--fill-size));
+  }
+}
+
+.stats-progress{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 7rem;
+}
+
+.moves-container{
+  width: 1116px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 10rem auto;
+  padding: 2.5rem 2rem;
+}
+
+.move-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.move-box{
+  padding: 0.2rem 0.5rem;
+  background: #E5E5E5;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  border-radius: 50px;
+  color: #302F2F; 
+}
+
