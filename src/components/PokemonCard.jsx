@@ -17,13 +17,7 @@ const PokemonCard = ({url}) => {
     
     },[])
     
-    console.log(pokemon)
-
-    const filterStats = () => {
-        stats.splice(3,1)
-    }
-
-    filterStats()
+    
 
     console.log(stats)
 
@@ -65,8 +59,8 @@ const PokemonCard = ({url}) => {
                                         <span className={`stats-data ${pokemon.types?.[0].type.name}-color`}>{stats[2]?.base_stat}</span>
                                     </li>
                                     <li>
-                                        <p className='stats-label'>{stats[3]?.stat.name}</p>
-                                        <span className={`stats-data ${pokemon.types?.[0].type.name}-color`}>{stats[3]?.base_stat}</span>
+                                        <p className='stats-label'>{stats[5]?.stat.name}</p>
+                                        <span className={`stats-data ${pokemon.types?.[0].type.name}-color`}>{stats[5]?.base_stat}</span>
                                     </li>
                             </ul>
                             
